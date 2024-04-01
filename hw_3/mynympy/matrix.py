@@ -9,6 +9,7 @@ class Matrix(mixins.DumpMixin):
             raise ValueError(f'{type(other)} cannot be added to matrix')
 
     def __init__(self, values):
+        super().__init__()
         self._rows = len(values)
         self._columns = len(values[0])
         self._values = values
