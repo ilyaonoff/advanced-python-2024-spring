@@ -1,5 +1,6 @@
 from . import validation
 
+
 class DumpMixin:
     def dump(self, f):
         for row in self.values:
